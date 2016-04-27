@@ -7,7 +7,6 @@ labels = samples(:, 3);
 
 % initial the parameters
 iterations = 1;
-weak_classifiers = 20;
 
 % show the samples on the figure
 figure(1);
@@ -17,4 +16,4 @@ plot(coordinates(labels == -1, 1), coordinates(labels == -1, 2), 'ro');
 legend('positive samples', 'negative samples');
 hold on;
 
-adaBoost(coordinates, labels, iterations, weak_classifiers);
+adaBoost(coordinates, labels, iterations);
