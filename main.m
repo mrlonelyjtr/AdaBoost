@@ -7,7 +7,7 @@ labels = samples(:, 3);
 
 % initialize the parameters
 iterations = 5;
-weakClassifiers = 50;
+weakClassifiers = 100;
 
 % get the final classifier and check the results of classification
 train_result = adaBoost(coordinates, labels, iterations, weakClassifiers);
